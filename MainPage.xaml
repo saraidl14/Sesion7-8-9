@@ -1,159 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Sesion7_8_9.MainPage">
+             x:Class="Sesion7_8_9.MainPage"
+             Title="Home">
 
     <ScrollView>
-        <Grid Padding="10" ColumnSpacing="8" RowSpacing="8">
-            
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Button x:Name="Button7"
+        <VerticalStackLayout Padding="10">
+            <!-- Título principal -->
+            <Label Text="Tipos de Dragones de Alas de Sangre"
+            FontSize="Large"
+            FontAttributes="Bold"
+            TextColor="DarkRed"
+            HorizontalOptions="Center" />
+
+            <!-- Imagen ilustrativa de los dragones -->
+            <Image Source="dragons.png" 
+            HeightRequest="400" 
+            Aspect="AspectFit" 
+            Margin="10" />
+
+            <Button x:Name="Button"
             Grid.Row="2"
             Grid.Column="0"
             BackgroundColor="#8A2BE2"
             CornerRadius="10"
-            FontSize="60"
+            FontSize="40"
             FontAttributes="Bold"
-            Text=""
-            ImageSource="marron.png"
-            WidthRequest="500"
-            HeightRequest="500"
+            Text="IR A GALERÍA"
             TextColor="White"
-            Clicked="ButtonClicked"
+            Clicked="OnClicked"
             Margin="2"/>
+            <!-- Descripción general -->
+            <Label Text="Los dragones de Alas de Sangre, se podrían clasificar en siete tipos, ocho si contamos al desconocido, dependiendo de su color:" TextColor="Black" FontSize="Medium"/>
 
-            <Button x:Name="Button8"
-            Grid.Row="2"
-            Grid.Column="1"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            ImageSource="naranja.png"
-            WidthRequest="500"
-            HeightRequest="500"
-            TextColor="White"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+            <!-- Lista de tipos de dragones con colores representativos -->
+            <Label Text="• Dragones Dorados" FontAttributes="Bold" TextColor="Goldenrod"/>
+            <Label Text="• Dragones Naranjas" FontAttributes="Bold" TextColor="DarkOrange"/>
+            <Label Text="• Dragones Rojos" FontAttributes="Bold" TextColor="Red"/>
+            <Label Text="• Dragones Verdes" FontAttributes="Bold" TextColor="Green"/>
+            <Label Text="• Dragones Azules" FontAttributes="Bold" TextColor="Blue"/>
+            <Label Text="• Dragones Marrones" FontAttributes="Bold" TextColor="SaddleBrown"/>
+            <Label Text="• Dragones Negros" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="• Dragones Desconocidos" FontAttributes="Bold" TextColor="Grey"/>
 
-            <Button x:Name="Button9"
-            Grid.Row="2"
-            Grid.Column="2"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            ImageSource="verde.png"
-            WidthRequest="500"
-            HeightRequest="500"
-            TextColor="White"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+            <!-- Mensaje adicional -->
+            <Label Text="Para saber más ve al menú desplegable"  TextColor="Black"/>
 
-            <!-- Segunda fila -->
-            <Button x:Name="Button4"
-            Grid.Row="3"
-            Grid.Column="0"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            ImageSource="rojo2.png"
-            WidthRequest="500"
-            HeightRequest="500"
-            TextColor="White"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+            <!-- Sección sobre las fases de vida de los dragones -->
+            <Label Text="Fases de la vida de un dragón"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="Blue"
+               HorizontalOptions="Center" />
 
-            <Button x:Name="Button5"
-            Grid.Row="3"
-            Grid.Column="1"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            ImageSource="negro.png"
-            WidthRequest="500"
-            HeightRequest="500"
-            TextColor="White"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+            <Label Text="Los dragones cuentan con unas cinco fases prioritarias en su vida, que van desde su crianza hasta su adultez. Cuando estos empiezan a crecer (al tener entre 3 o 4 años) se les conoce cómo ‘Colas de pluma’ y en esa época se les enseña que deben esperar a crecer de verdad para vincularse con un jinete."
+               FontSize="Medium"
+               TextColor="Black"/>
 
-            <Button x:Name="Button6"
-            Grid.Row="3"
-            Grid.Column="2"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            ImageSource="azul.png"
-            WidthRequest="500"
-            HeightRequest="500"
-            TextColor="White"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+            <!-- Información sobre el 'Sueño sin Sueño' -->
+            <Label Text="Cuando llegan a la adolescencia, los dragones entran en un trance conocido cómo el ‘Sueño sin Sueño’, que les permite un rápido crecimiento de sus cuerpos para que estos sean capaces de llevar a un jinete con ellos. Solo se sabe cuatro cosas con certeza de este trance:" 
+               FontSize="Medium"
+               FontAttributes="Bold"
+               TextColor="DarkRed"/>
 
-            <!-- Tercera fila -->
-            <Button x:Name="Button1"
-            Grid.Row="4"
-            Grid.Column="0"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            ImageSource="dorado.png"
-            WidthRequest="500"
-            HeightRequest="500"
-            TextColor="White"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+            <!-- Características del trance -->
+            <Label Text="• La duración del mismo varía dependiendo de la raza del dragón." TextColor="Black"/>
+            <Label Text="• A pesar de estar ‘dormidos’, los dragones no tienen ningún tipo de sueño durante el proceso." TextColor="Black"/>
+            <Label Text="• Cada vez que un dragón sale del Sueño sin Sueños, este sale hambriento." TextColor="Black"/>
+            <Label Text="• Una vez salen del trance, desarrollan un nuevo color y una nueva cola perdiendo su cola de plumas y su color dorado." TextColor="Black"/>
 
-            <Button x:Name="Button2"
-            Grid.Row="4"
-            Grid.Column="1"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            TextColor="White"
-            ImageSource="desconocido.png"
-            WidthRequest="500"
-            HeightRequest="500"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+            <!-- Información sobre la adultez y el apareamiento -->
+            <Label Text="Una vez ya son adultos, estos se pueden aparear. Se dice que no existe un vínculo más fuerte que el que existe entre dos dragones apareados, ya que va más allá del amor o la propia adoración humana. Cuando dos dragones se juntan, no pueden vivir sin el otro y ni siquiera pueden estar mucho tiempo separados físicamente, ya que su salud se disminuye." 
+               FontSize="Medium" 
+               TextColor="Black"/>
 
-            <Button x:Name="Button3"
-            Grid.Row="4"
-            Grid.Column="2"
-            BackgroundColor="#8A2BE2"
-            CornerRadius="10"
-            FontSize="60"
-            FontAttributes="Bold"
-            Text=""
-            TextColor="White"
-            Clicked="ButtonClicked"
-            Margin="2"/>
+        </VerticalStackLayout>
 
-        </Grid>
     </ScrollView>
+
 
 </ContentPage>

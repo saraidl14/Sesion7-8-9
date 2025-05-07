@@ -23,6 +23,13 @@
         Route="Configuracion" />
     </FlyoutItem>
 
+    <FlyoutItem Title="Galería">
+
+        <ShellContent
+    Title="Home"
+    ContentTemplate="{DataTemplate local:Galeria}"
+    Route="Galeria" />
+    </FlyoutItem>
     <!-- Secciones individuales para diferentes tipos de dragones -->
 
     <FlyoutItem Title="Marrones">
@@ -97,9 +104,9 @@
     <FlyoutItem Title="Galería Personalizada">
 
         <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate local:Galeria}"
-    Route="Galeria" />
+        Title="Home"
+        ContentTemplate="{DataTemplate local:GaleriaPersonalizable}"
+        Route="GaleriaPersonalizable" />
     </FlyoutItem>
 
 

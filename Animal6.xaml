@@ -8,17 +8,17 @@
             <!-- Título principal de la página, indicando que trata sobre los dragones azules -->
 
             <Label 
-     Text="Azules"
-     Style="{StaticResource Headline}"
-     VerticalOptions="Center" 
-     HorizontalOptions="Center" />
+             Text="Azules"
+             Style="{StaticResource Headline}"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" />
             <!-- Imagen representativa de los dragones azules -->
-            <Image Source="azul.png" 
-    HeightRequest="400"/>
+             <Image Source="azul.png" 
+             HeightRequest="400"/>
             <!-- Botón para ver más detalles sobre los dragones azules -->
             <Button Text="Detalles"
-     Clicked="DetallesBTN"
-     x:Name="btnLBL" />
+             Clicked="DetallesBTN"
+             x:Name="btnLBL" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -3,10 +3,156 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sesion7_8_9.Galeria"
              Title="Galeria">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <Grid Padding="10" ColumnSpacing="8" RowSpacing="8">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Button7"
+                Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="marron.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+            <Button x:Name="Button8"
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="naranja.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+            <Button x:Name="Button9"
+                Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="verde.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>    
+
+            <!-- Segunda fila -->
+            <Button x:Name="Button4"
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="rojo2.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+            <Button x:Name="Button5"
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="negro.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+            <Button x:Name="Button6"
+                Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="azul.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+            <!-- Tercera fila -->
+            <Button x:Name="Button1"
+                Grid.Row="4"
+                Grid.Column="0"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="dorado.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+            <Button x:Name="Button2"
+                Grid.Row="4"
+                Grid.Column="1"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                ImageSource="desconocido.png"
+                WidthRequest="500"
+                HeightRequest="500"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+            <Button x:Name="Button3"
+                Grid.Row="4"
+                Grid.Column="2"
+                BackgroundColor="#8A2BE2"
+                CornerRadius="10"
+                FontSize="60"
+                FontAttributes="Bold"
+                Text=""
+                TextColor="White"
+                Clicked="ButtonClicked"
+                Margin="2"/>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

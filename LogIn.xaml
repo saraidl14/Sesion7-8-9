@@ -96,7 +96,7 @@
                                    CornerRadius="8"
                                    Padding="5"
                                    HasShadow="False">
-                                    <Image Source="key_icon.png" 
+                                    <Image Source="key.png" 
                                        HeightRequest="20" 
                                        HorizontalOptions="Center"
                                        VerticalOptions="Center"/>

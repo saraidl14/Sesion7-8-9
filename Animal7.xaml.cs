@@ -11,8 +11,8 @@ public partial class Animal7 : ContentPage
     /// Muestra los detalles del dragón dorado.
     /// Método que se encarga de cambiar de ventana al hacer click en el botón.
     /// </summary>
-    /// param name="sender">Objeto que activa el evento</param>
-    /// param name="e">Argumentos del evento que ayuda a la funcion</param>
+    /// param name="sender">Objeto que activa el evento 
+    /// param name="e">Argumentos del evento que ayuda a la funcion
     private void DetallesBTN(object sender, EventArgs e)
     {
 

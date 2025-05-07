@@ -99,12 +99,12 @@
                         Clicked="OnFontFamilyClicked"
                         ClassId="Default"/>
 
-                <Button Text="Monospace" 
-                        FontFamily="Monospace"
+                <Button Text="Nunito" 
+                        FontFamily="Nunito"
                         Grid.Column="1"
                         HeightRequest="40"
                         Clicked="OnFontFamilyClicked"
-                        ClassId="Monospace"/>
+                        ClassId="Nunito"/>
 
                 <Button Text="Serif" 
                         FontFamily="Serif"
