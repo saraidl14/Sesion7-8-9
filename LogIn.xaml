@@ -121,16 +121,25 @@
                             HeightRequest="50"
                             FontAttributes="Bold"
                             Clicked="OnLoginClicked"/>
+                        <!-- Botón de login -->
+                        <Button Grid.Row="4"
+                             Text="Entrar por huella"
+                             BackgroundColor="#4B3B96"
+                             TextColor="White"
+                             CornerRadius="8"
+                             HeightRequest="50"
+                             FontAttributes="Bold"
+                             Clicked="ClickHuella"/>     
 
                         <!-- Olvidé mi contraseña -->
-                        <Label Grid.Row="4"
+                        <Label Grid.Row="5"
                            Text="Forgot your password?"
                            TextColor="#4B3B96"
                            HorizontalOptions="Center"
                            FontSize="14"/>
 
                         <!-- Crear cuenta -->
-                        <Button Grid.Row="5"
+                        <Button Grid.Row="6"
                             Text="Create your Account"
                             BackgroundColor="Transparent"
                             TextColor="#4B3B96"
