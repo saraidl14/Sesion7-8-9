@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Sesion7_8_9.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Sesion7_8_9"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Sesion7_8_9">
+
+    <!-- 
+    FlyoutItem "Home": Agrupa las opciones principales de la aplicación.
+    Contiene dos subpáginas: "Tipos de Dragones" y "Tipos de Colas".
+    Que se han agregado a la aplicación para mostrar información sobre los dragones y sus tipos.
+-->
+    <FlyoutItem Title="Home">
+        <ShellContent
+    Title="Tipos de Dragones"
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="TiposDeDragones" />
+        <ShellContent
+    Title="Tipos de Colas"
+    ContentTemplate="{DataTemplate local:Animal1}"
+    Route="NewPage5" />
+    </FlyoutItem>
+
+    <!-- Secciones individuales para diferentes tipos de dragones -->
+
+    <FlyoutItem Title="Marrones">
+
+        <ShellContent
+    Title="Home"
+    ContentTemplate="{DataTemplate local:Animal1}"
+    Route="NewPage1" />
+    </FlyoutItem>
+  
+
+</Shell>
