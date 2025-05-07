@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sesion7_8_9.Configuracion"
+             Title="Configuracion">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Configuración de la Aplicación" 
+                   FontSize="24" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <!-- Color de Fondo -->
+            <Label Text="Color de Fondo:" FontSize="18"/>
+            <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="Auto" ColumnSpacing="10">
+                <Button BackgroundColor="#FFFFFF" 
+                        Grid.Column="0"
+                        HeightRequest="40"
+                        Clicked="OnBackgroundColorClicked"
+                        ClassId="#FFFFFF"/>
+
+                <Button BackgroundColor="#F0F0F0" 
+                        Grid.Column="1"
+                        HeightRequest="40"
+                        Clicked="OnBackgroundColorClicked"
+                        ClassId="#F0F0F0"/>
+
+                <Button BackgroundColor="#FFF2CC" 
+                        Grid.Column="2"
+                        HeightRequest="40"
+                        Clicked="OnBackgroundColorClicked"
+                        ClassId="#FFF2CC"/>
+
+                <Button BackgroundColor="#D5E8D4" 
+                        Grid.Column="3"
+                        HeightRequest="40"
+                        Clicked="OnBackgroundColorClicked"
+                        ClassId="#D5E8D4"/>
+            </Grid>
+
+            <!-- Color de Texto -->
+            <Label Text="Color de Texto:" FontSize="18" Margin="0,10,0,0"/>
+            <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="Auto" ColumnSpacing="10">
+                <Button BackgroundColor="#000000" 
+                        Grid.Column="0"
+                        HeightRequest="40"
+                        Clicked="OnTextColorClicked"
+                        ClassId="#000000"/>
+
+                <Button BackgroundColor="#0000FF" 
+                        Grid.Column="1"
+                        HeightRequest="40"
+                        Clicked="OnTextColorClicked"
+                        ClassId="#0000FF"/>
+
+                <Button BackgroundColor="#FF0000" 
+                        Grid.Column="2"
+                        HeightRequest="40"
+                        Clicked="OnTextColorClicked"
+                        ClassId="#FF0000"/>
+
+                <Button BackgroundColor="#008000" 
+                        Grid.Column="3"
+                        HeightRequest="40"
+                        Clicked="OnTextColorClicked"
+                        ClassId="#008000"/>
+            </Grid>
+
+            <!-- Tamaño de Texto -->
+            <Label Text="Tamaño de Texto:" FontSize="18" Margin="0,10,0,0"/>
+            <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto" ColumnSpacing="10">
+                <Button Text="Pequeño" 
+                        Grid.Column="0"
+                        HeightRequest="40"
+                        Clicked="OnFontSizeClicked"
+                        ClassId="14"/>
+
+                <Button Text="Mediano" 
+                        Grid.Column="1"
+                        HeightRequest="40"
+                        Clicked="OnFontSizeClicked"
+                        ClassId="18"/>
+
+                <Button Text="Grande" 
+                        Grid.Column="2"
+                        HeightRequest="40"
+                        Clicked="OnFontSizeClicked"
+                        ClassId="24"/>
+            </Grid>
+
+            <!-- Tipo de Fuente -->
+            <Label Text="Tipo de Fuente:" FontSize="18" Margin="0,10,0,0"/>
+            <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto" ColumnSpacing="10">
+                <Button Text="Default" 
+                        FontFamily="Default"
+                        Grid.Column="0"
+                        HeightRequest="40"
+                        Clicked="OnFontFamilyClicked"
+                        ClassId="Default"/>
+
+                <Button Text="Monospace" 
+                        FontFamily="Monospace"
+                        Grid.Column="1"
+                        HeightRequest="40"
+                        Clicked="OnFontFamilyClicked"
+                        ClassId="Monospace"/>
+
+                <Button Text="Serif" 
+                        FontFamily="Serif"
+                        Grid.Column="2"
+                        HeightRequest="40"
+                        Clicked="OnFontFamilyClicked"
+                        ClassId="Serif"/>
+            </Grid>
+
+            <!-- Texto de prueba -->
+            <Frame Margin="0,20,0,0" Padding="15" BorderColor="Gray">
+                <StackLayout>
+                    <Label Text="Vista previa:" FontSize="16" Margin="0,0,0,10"/>
+                    <Label x:Name="PreviewLabel" 
+                           Text="Texto de ejemplo"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Botones de acción -->
+            <Button Text="Guardar Configuración" 
+                    Clicked="OnSaveClicked"
+                    Margin="0,20,0,0"/>
+
+            <Button Text="Restablecer Valores" 
+                    Clicked="OnResetClicked"
+                    BackgroundColor="#FF6B6B"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

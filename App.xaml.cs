@@ -5,8 +5,8 @@
         public App()
         {
             InitializeComponent();
-
-            MainPage = new AppShell();
+            //COMO MAUI PONE POR DEFECTO LA PRIMERA CONTENT PAGE, HE TENIDO QUE FORZAR Y PONER QUE LA PRIMERA QUE SE INICIE SEA EL LOGIN
+            MainPage = new LogIn();
         }
     }
 }

@@ -14,13 +14,13 @@
 -->
     <FlyoutItem Title="Home">
         <ShellContent
-    Title="Tipos de Dragones"
-    ContentTemplate="{DataTemplate local:MainPage}"
-    Route="TiposDeDragones" />
+        Title="Tipos de Dragones"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
         <ShellContent
-    Title="Tipos de Colas"
-    ContentTemplate="{DataTemplate local:Animal1}"
-    Route="NewPage5" />
+        Title="Configuración"
+        ContentTemplate="{DataTemplate local:Configuracion}"
+        Route="Configuracion" />
     </FlyoutItem>
 
     <!-- Secciones individuales para diferentes tipos de dragones -->
@@ -28,10 +28,79 @@
     <FlyoutItem Title="Marrones">
 
         <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate local:Animal1}"
-    Route="NewPage1" />
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal1}"
+        Route="Animal1" />
     </FlyoutItem>
-  
+    
+    <FlyoutItem Title="Naranja">
+
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal2}"
+        Route="Animal2" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Verde">
+
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal3}"
+        Route="Animal3" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Rojo">
+
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal4}"
+        Route="Animal4" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Negro">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal5}"
+        Route="Animal5" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Azul">
+
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal6}"
+        Route="Animal6" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Dorado">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal7}"
+        Route="Animal7" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Desconocido">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Animal8}"
+        Route="Animal8" />
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Configuración">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Configuracion}"
+        Route="Configuracion" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Galería Personalizada">
+
+        <ShellContent
+    Title="Home"
+    ContentTemplate="{DataTemplate local:Galeria}"
+    Route="Galeria" />
+    </FlyoutItem>
+
 
 </Shell>

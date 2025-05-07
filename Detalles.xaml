@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sesion7_8_9.Detalles"
+             Title="Detalles">
+    <!-- Contenedor principal que organiza los elementos en una pila vertical -->
+    <ScrollView>
+        <VerticalStackLayout>
+        <!-- 
+         Etiqueta que muestra el texto relacionado con el dragón.
+         El texto está enlazado a la propiedad "Texto" del contexto de enlace.
+     -->
+        <Label 
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" 
+          x:Name="txtLBL" 
+         Text="{Binding Texto}"
+         
+         />
+        <!-- 
+         Imagen asociada al dragón. La fuente de la imagen se enlaza a la propiedad "Image1" 
+         del contexto de enlace, mostrando la imagen correspondiente. Esta imagen tiene una anchura y altura específicas dadas por mi de 400.
+         Las imagenes se encuentran en la carpeta Resources/Images.
+     -->
+        <Image Source="{Binding Image}" WidthRequest="400" HeightRequest="400" />
+        <!-- 
+         Etiqueta que muestra la descripción del dragón. El texto se enlaza a la propiedad "Description" 
+         del contexto de enlace, mostrando la descripción detallada del dragón.
+     -->
+        <Label 
+         Text= "{Binding Description}"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

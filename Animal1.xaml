@@ -2,11 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sesion7_8_9.Animal1"
-             Title="Animal1">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
+             Title="Dragones Marrones">
+    <!-- ScrollView para permitir desplazamiento en caso de que el contenido sea largo -->
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!--
+            Título de la página con el nombre "Marron". 
+            Se aplica un estilo predefinido a través de un recurso estático.
+        -->
+            <Label 
+            Text="Marron"
+            Style="{StaticResource Headline}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            <!--
+            Imagen representativa de los dragones marrones.
+            Se ajusta la altura de la imagen a 400 unidades.
+        -->
+              <Image Source="marron.png" 
+              HeightRequest="400"/>
+            <!--
+            Botón para ver más detalles sobre los dragones marrones.
+            Al hacer clic en el botón, se ejecutará el evento "DetallesBTN".
+           Y nos llevará a la página de detalles. 
+        -->
+            <Button Text="Detalles"
+            Clicked="DetallesBTN"
+            x:Name="btnLBL" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

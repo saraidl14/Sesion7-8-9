@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sesion7_8_9.LogIn"
+             Title="LogIn">
+    <ScrollView>
+
+        <Grid>
+            <!-- Fondo superior morado -->
+            <Rectangle Fill="#4B3B96" 
+                   HeightRequest="300"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Fill"/>
+
+            <!-- Contenido principal -->
+            <Grid RowDefinitions="Auto, *" 
+              Padding="0" 
+              RowSpacing="0">
+
+                <!-- Sección superior (logo e imagen) -->
+                <Grid VerticalOptions="Start" HeightRequest="300">
+                    <!-- Fondo morado base -->
+                    <Rectangle Fill="#4B3B96" 
+                       HorizontalOptions="Fill"/>
+
+                    <!-- Imagen de fondo que ocupa todo el espacio superior -->
+                    <Image Source="fondo.png"  
+                       HorizontalOptions="Fill" 
+                       VerticalOptions="Fill"
+                       Aspect="AspectFit"/>
+                </Grid>
+
+                <!-- Sección de login -->
+                <Frame Grid.Row="1" 
+                   BorderColor="Transparent" 
+                   BackgroundColor="#f5f5f5"
+                   CornerRadius="0"
+                   Margin="0" 
+                   Padding="20,40,20,20">
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto"
+                      RowSpacing="15">
+
+                        <!-- Título de bienvenida -->
+                        <StackLayout Grid.Row="0" Spacing="0">
+                            <Label Text="¡BIENVENIDO A TU DRAGOTECA!" 
+                               FontSize="22" 
+                               FontAttributes="Bold"
+                               TextColor="#333333"/>
+                            <Label Text="Inicia sesión para continuar" 
+                               FontSize="16" 
+                               TextColor="#9E9E9E"/>
+                        </StackLayout>
+
+                        <!-- Campo de email -->
+                        <Frame Grid.Row="1" 
+                           Padding="10" 
+                           BackgroundColor="White" 
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#E0E0E0">
+                            <Grid ColumnDefinitions="Auto,*">
+                                <Frame Grid.Column="0"
+                                   BackgroundColor="#4B3B96"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   CornerRadius="8"
+                                   Padding="5"
+                                   HasShadow="False">
+                                    <Image Source="profile.jpg" 
+                                       HeightRequest="20" 
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"/>
+                                </Frame>
+                                <Entry Grid.Column="1"
+                                   x:Name="EmailEntry"
+                                   Placeholder="USER"
+                                   PlaceholderColor="#BDBDBD"
+                                   TextColor="#333333"
+                                   VerticalOptions="Center"
+                                   Margin="10,0,0,0"/>
+                            </Grid>
+                        </Frame>
+
+                        <!-- Campo de contraseña -->
+                        <Frame Grid.Row="2" 
+                           Padding="10" 
+                           BackgroundColor="White" 
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#E0E0E0">
+                            <Grid ColumnDefinitions="Auto,*">
+                                <Frame Grid.Column="0"
+                                   BackgroundColor="#4B3B96"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   CornerRadius="8"
+                                   Padding="5"
+                                   HasShadow="False">
+                                    <Image Source="key_icon.png" 
+                                       HeightRequest="20" 
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"/>
+                                </Frame>
+                                <Entry Grid.Column="1"
+                                   x:Name="PasswordEntry"
+                                   Placeholder="PASSWORD"
+                                   PlaceholderColor="#BDBDBD"
+                                   IsPassword="True"
+                                   TextColor="#333333"
+                                   VerticalOptions="Center"
+                                   Margin="10,0,0,0"/>
+                            </Grid>
+                        </Frame>
+
+                        <!-- Botón de login -->
+                        <Button Grid.Row="3"
+                            Text="Login"
+                            BackgroundColor="#4B3B96"
+                            TextColor="White"
+                            CornerRadius="8"
+                            HeightRequest="50"
+                            FontAttributes="Bold"
+                            Clicked="OnLoginClicked"/>
+
+                        <!-- Olvidé mi contraseña -->
+                        <Label Grid.Row="4"
+                           Text="Forgot your password?"
+                           TextColor="#4B3B96"
+                           HorizontalOptions="Center"
+                           FontSize="14"/>
+
+                        <!-- Crear cuenta -->
+                        <Button Grid.Row="5"
+                            Text="Create your Account"
+                            BackgroundColor="Transparent"
+                            TextColor="#4B3B96"
+                            BorderColor="#4B3B96"
+                            BorderWidth="1"
+                            CornerRadius="8"
+                            HeightRequest="50"/>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </Grid>
+
+
+    </ScrollView>
+</ContentPage>

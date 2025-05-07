@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sesion7_8_9.Animal5"
+             Title="Dragones Negros">
+    
+    <!-- ScrollView para permitir desplazamiento en caso de que el contenido sea largo -->
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!--
+         Título de la página con el nombre "Negro". 
+         Se aplica un estilo predefinido a través de un recurso estático.
+     -->
+            <Label 
+            Text="Negro"
+            Style="{StaticResource Headline}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <!-- 
+        Imagen representativa de los dragones Negros
+        -->
+            <Image Source="negro.png" 
+             HeightRequest="400"/>
+            <!--
+          Botón para ver más detalles sobre los dragones negros.
+         Al hacer clic en el botón, se ejecutará el evento "DetallesBTN".
+        Y nos llevará a la página de detalles.            
+        -->
+            <Button Text="Detalles"
+            Clicked="DetallesBTN"
+            x:Name="btnLBL" />
+         </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sesion7_8_9.Animal4"
+             Title="Dragones Rojos">
+    <!-- ScrollView para permitir desplazamiento en caso de que el contenido sea largo -->
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <!--
+             Título de la página con el nombre "Rojo". 
+             Se aplica un estilo predefinido a través de un recurso estático.
+         -->
+            <Label 
+             Text="Rojo"
+             Style="{StaticResource Headline}"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" />
+            <!--
+             Imagen representativa de los dragones rojos.
+             Se ajusta la altura de la imagen a 400 unidades.
+         -->
+            <Image Source="rojo2.png" 
+             HeightRequest="400"/>
+            <!--
+             Botón para ver más detalles sobre los dragones rojos.
+             Al hacer clic en el botón, se ejecutará el evento "DetallesBTN".
+             Y nos llevará a la página de detalles del dragon rojo.
+         -->
+            <Button Text="Detalles"
+             Clicked="DetallesBTN"
+             x:Name="btnLBL" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

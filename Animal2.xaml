@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sesion7_8_9.Animal2"
+             Title="Dragones Naranjas">
+    <!-- ScrollView para permitir desplazamiento en caso de que el contenido sea largo -->
+    <ScrollView>
+        <VerticalStackLayout>
+            <!--
+             Título de la página con el nombre "Naranjas". 
+             Se aplica un estilo predefinido a través de un recurso estático.
+         -->
+            <Label 
+             Text="Naranjas"
+             Style="{StaticResource Headline}"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" />
+            <!--
+             Imagen representativa de los dragones naranjas.
+             Se ajusta la altura de la imagen a 400 unidades.
+         -->
+            <Image Source="naranja.png" 
+          HeightRequest="400"/>
+            <!--
+          Botón para ver más detalles sobre los dragones marrones.
+          Al hacer clic en el botón, se ejecutará el evento "DetallesBTN".
+         Y nos llevará a la página de detalles. 
+          -->
+            <Button Text="Detalles"
+         Clicked="DetallesBTN"
+         x:Name="btnLBL" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

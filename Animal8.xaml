@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sesion7_8_9.Animal8"
+             Title="Dragon Desconocido">
+    <!--Scrollview nos permite navegar por la pagina con la ruleta del raton si el texto es demasiado largo -->
+    <ScrollView>
+        <VerticalStackLayout>
+            <!-- Título principal de la página, indicando que trata sobre los dragones desconocidos -->
+            <Label 
+            Text="Desconocido"
+            Style="{StaticResource Headline}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <!-- Imagen representativa de los dragones desconocidos -->
+            <Image Source="desconocido2.png" 
+            HeightRequest="400"/>
+            <!-- Botón para ver más detalles sobre los dragones desconocidos -->
+            <Button Text="Detalles"
+            Clicked="DetallesBTN"
+            x:Name="btnLBL" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
