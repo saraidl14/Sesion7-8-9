@@ -18,6 +18,27 @@ public partial class Configuracion : ContentPage
         InitializeComponent();
         LoadSettings();
         UpdatePreview();
+        
+    }
+
+    private void OnClicked(object sender, EventArgs e)
+    {
+        ICollection<ResourceDictionary> mergeDictionaries = Application.Current.Resources.MergedDictionaries;
+        if (mergeDictionaries != null)
+        {
+            mergeDictionaries.Clear();
+            mergeDictionaries.Add(new TemaOscuro());
+        }
+    }
+
+    private void OnClicked1(object sender, EventArgs e)
+    {
+        ICollection<ResourceDictionary> mergeDictionaries = Application.Current.Resources.MergedDictionaries;
+        if (mergeDictionaries != null)
+        {
+            mergeDictionaries.Clear();
+            mergeDictionaries.Add(new TemaClaro());
+        }
     }
 
     private void LoadSettings()
@@ -101,4 +122,5 @@ public partial class Configuracion : ContentPage
 
         UpdatePreview();
     }
+
 }
