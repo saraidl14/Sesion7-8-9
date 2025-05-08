@@ -14,7 +14,7 @@
             HorizontalOptions="Center" />
 
             <!-- Imagen ilustrativa de los dragones -->
-            <Image Source="dragons.png" 
+            <Image Source="dragons.jpg" 
             HeightRequest="400" 
             Aspect="AspectFit" 
             Margin="10" />

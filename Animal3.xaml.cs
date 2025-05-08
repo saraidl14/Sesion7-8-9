@@ -22,7 +22,7 @@ public partial class Animal3 : ContentPage
             BindingContext = new CambioVentanas
             {
                 Texto = "Los dragones Verdes",
-                Image = "verde2.png",
+                Image = "verde2.jpg",
                 Description = "Los dragones verdes se destacan por su conexión con la naturaleza y su capacidad de camuflaje. " +
                 "Son excelentes en operaciones de sigilo y emboscadas, utilizando su entorno a su favor para sorprender a sus enemigos." +
                 "Se les asume como los dragones más listos e inteligentes de todos.\r\n\r\n" +

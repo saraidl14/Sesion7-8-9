@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sesion7_8_9
+﻿namespace Sesion7_8_9
 {
         /// <summary>
         /// Clase que representa un modelo de datos para una página de contenido.

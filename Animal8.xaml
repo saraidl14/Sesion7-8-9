@@ -13,7 +13,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
             <!-- Imagen representativa de los dragones desconocidos -->
-            <Image Source="desconocido2.png" 
+            <Image Source="desconocido2.jpg" 
             HeightRequest="400"/>
             <!-- Botón para ver más detalles sobre los dragones desconocidos -->
             <Button Text="Detalles"

@@ -34,7 +34,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonMarron, new CambioVentanas
                     {
                         Texto = "Los Dragones Marrones",
-                        Image = "marron.png",
+                        Image = "marron.jpg",
                         Description = "Los dragones marrones son un armazón de carne y hueso. Son equilibrados en sus habilidades, " +
                         "combinando fuerza y resistencia con una buena capacidad para la maniobra. " +
                         "Su versatilidad los convierte en una opción sólida para cualquier jinete."
@@ -43,7 +43,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonNaranja, new CambioVentanas
                     {
                         Texto = "Los Dragones Naranjas",
-                        Image = "naranja.png",
+                        Image = "naranja.jpg",
                         Description = "Los dragones naranjas son extremadamente letales, conocidos por su capacidad para atacar con ferocidad. " +
                         "Su color vibrante refleja su naturaleza agresiva y su aptitud para misiones ofensivas, donde la fuerza bruta es esencial."
                     }
@@ -51,7 +51,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonVerde, new CambioVentanas
                     {
                         Texto = "Los Dragones Verdes",
-                        Image = "verde.png",
+                        Image = "verde.jpg",
                         Description = "Los dragones verdes son maestros del camuflaje natural y habitan en bosques densos. " +
                         "Sus escamas verdes les permiten mezclarse perfectamente entre la vegetación. " +
                         "Son conocidos por su inteligencia táctica y habilidades de sigilo."
@@ -60,7 +60,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonRojo, new CambioVentanas
                     {
                         Texto = "Los Dragones Rojos",
-                        Image = "rojo2.png",
+                        Image = "rojo2.jpg",
                         Description = "Los dragones rojos son símbolos de poder y dominación. Sus escamas carmesí brillan como metal al rojo vivo. " +
                         "Son criaturas orgullosas, territoriales y feroces en batalla."
                     }
@@ -68,7 +68,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonNegro, new CambioVentanas
                     {
                         Texto = "Los Dragones Negros",
-                        Image = "negro.png",
+                        Image = "negro.jpg",
                         Description = "Los dragones negros son criaturas nocturnas y misteriosas. Sus escamas absorbentes de luz les permiten fundirse con las sombras. " +
                         "Son maestros de la magia oscura y tienen una conexión especial con el mundo de los espíritus."
                     }
@@ -76,7 +76,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonAzul, new CambioVentanas
                     {
                         Texto = "Los Dragones Azules",
-                        Image = "azul.png",
+                        Image = "azul.jpg",
                         Description = "Los dragones azules tienen afinidad con el agua y el cielo. Sus escamas iridiscentes reflejan todos los tonos del océano. " +
                         "Son excelentes nadadores y voladores, adaptándose perfectamente a entornos acuáticos y aéreos."
                     }
@@ -84,7 +84,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonDorado, new CambioVentanas
                     {
                         Texto = "Los Dragones Dorados",
-                        Image = "dorado.png",
+                        Image = "dorado.jpg",
                         Description = "Los dragones dorados son los más raros y venerados entre todas las especies. " +
                         "Sus escamas brillan como el oro pulido bajo la luz del sol. " +
                         "Son símbolos de prosperidad, sabiduría y poder benevolente."
@@ -93,7 +93,7 @@ public partial class GaleriaPersonalizable : ContentPage
                 { DragonDesconocido, new CambioVentanas
                     {
                         Texto = "Dragón Desconocido",
-                        Image = "desconocido.png",
+                        Image = "desconocido.jpg",
                         Description = "Este misterioso dragón pertenece a una especie aún no catalogada por los dragonólogos. " +
                         "Sus orígenes son inciertos y sus habilidades son un enigma incluso para los más estudiosos."
                     }

@@ -21,7 +21,7 @@
              Imagen representativa de los dragones rojos.
              Se ajusta la altura de la imagen a 400 unidades.
          -->
-            <Image Source="rojo2.png" 
+            <Image Source="rojo2.jpg" 
              HeightRequest="400"/>
             <!--
              Botón para ver más detalles sobre los dragones rojos.

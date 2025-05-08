@@ -20,7 +20,7 @@
             Imagen representativa de los dragones marrones.
             Se ajusta la altura de la imagen a 400 unidades.
         -->
-              <Image Source="marron.png" 
+              <Image Source="marron.jpg" 
               HeightRequest="400"/>
             <!--
             Botón para ver más detalles sobre los dragones marrones.

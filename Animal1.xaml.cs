@@ -21,7 +21,7 @@ public partial class Animal1 : ContentPage
             BindingContext = new CambioVentanas
             {
                 Texto = "Los Dragones Marrones",
-                Image = "marron2.png",
+                Image = "marron2.jpg",
                 Description = "Los dragones marrones son un armazón de carne y hueso. Son equilibrados en sus habilidades, " +
                 "combinando fuerza y resistencia con una buena capacidad para la maniobra. " +
                 "Su versatilidad los convierte en una opción sólida para cualquier jinete.\r\n\r\n" +

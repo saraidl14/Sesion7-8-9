@@ -14,7 +14,7 @@ public partial class Animal5 : ContentPage
             BindingContext = new CambioVentanas
             {
                 Texto = "Los Dragones Negros",
-                Image = "negro2.png",
+                Image = "negro2.jpg",
                 Description = "Estos son los más raros de su especie. También son los más astutos, inteligente y exigentes. " +
                 "Esto hace que sea prácticamente imposible engañarlos. Originalmente, eclosionaban en el " +
                 "Valle sobre Riorson House, que estaba calentado por la energía térmica de la zona. Todos ellos descienden de la  la astuta línea Dubhmadinn.\r\n\r\n" +

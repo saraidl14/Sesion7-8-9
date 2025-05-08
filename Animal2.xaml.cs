@@ -20,7 +20,7 @@ public partial class Animal2 : ContentPage
             BindingContext = new CambioVentanas
             {
                 Texto = "Los Dragones Naranjas",
-                Image = "naranja2.png",
+                Image = "naranja2.jpg",
                 Description = "Los dragones naranjas son extremadamente letales, conocidos por su capacidad para atacar con ferocidad. " +
                                             "Su color vibrante refleja su naturaleza agresiva y su aptitud para misiones ofensivas, donde la fuerza bruta es esencial.\r\n\r\n" +
                                             "Son los más peligrosos de todos, son impredecibles y no se detendrán ante nada para lograr sus objetivos." +

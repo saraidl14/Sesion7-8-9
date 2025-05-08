@@ -19,7 +19,7 @@
              Imagen representativa de los dragones verdes.
              Se ajusta la altura de la imagen a 400 unidades.
          -->
-            <Image Source="verde.png" 
+            <Image Source="verde.jpg" 
              HeightRequest="400"/>
             <!--             
              Botón para ver más detalles sobre los dragones verdes.

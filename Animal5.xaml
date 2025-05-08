@@ -20,7 +20,7 @@
             <!-- 
         Imagen representativa de los dragones Negros
         -->
-            <Image Source="negro.png" 
+            <Image Source="negro.jpg" 
              HeightRequest="400"/>
             <!--
           Botón para ver más detalles sobre los dragones negros.

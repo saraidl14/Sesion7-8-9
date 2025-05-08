@@ -24,7 +24,7 @@
                        HorizontalOptions="Fill"/>
 
                     <!-- Imagen de fondo que ocupa todo el espacio superior -->
-                    <Image Source="fondo.png"  
+                    <Image Source="fondo.jpg"  
                        HorizontalOptions="Fill" 
                        VerticalOptions="Fill"
                        Aspect="AspectFit"/>

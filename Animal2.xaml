@@ -19,7 +19,7 @@
              Imagen representativa de los dragones naranjas.
              Se ajusta la altura de la imagen a 400 unidades.
          -->
-            <Image Source="naranja.png" 
+            <Image Source="naranja.jpg" 
           HeightRequest="400"/>
             <!--
           Botón para ver más detalles sobre los dragones marrones.

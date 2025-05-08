@@ -14,7 +14,7 @@ public partial class Animal8 : ContentPage
             BindingContext = new CambioVentanas
             {
                 Texto = "Los Dragones Desconocidos",
-                Image = "desconocido.png",
+                Image = "desconocido.jpg",
                 Description = "Hay un tipo de dragones del que no se sabe nada pues se creían extintos, unos con un linaje especial." +
                 "Hay dragones cuyo color y habilidades específicas no se conocen, lo que los convierte en un misterio. " +
                 "Estos dragones pueden poseer habilidades únicas que aún no han sido descubiertas o reveladas.\r\n\r\n" +

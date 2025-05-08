@@ -111,49 +111,49 @@
                         <StackLayout x:Name="DragonsCheckboxContainer" Spacing="15">
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonMarron" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="marron.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="marron.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Marrón" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonNaranja" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="naranja.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="naranja.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Naranja" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonVerde" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="verde.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="verde.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Verde" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonRojo" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="rojo2.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="rojo2.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Rojo" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonNegro" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="negro.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="negro.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Negro" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonAzul" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="azul.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="azul.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Azul" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonDorado" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="dorado.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="dorado.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Dorado" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
                                 <CheckBox x:Name="DragonDesconocido" Color="#8A2BE2" CheckedChanged="OnDragonCheckChanged"/>
-                                <Image Source="desconocido.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                <Image Source="desconocido.jpg" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
                                 <Label Text="Dragón Desconocido" VerticalOptions="Center"/>
                             </HorizontalStackLayout>
                         </StackLayout>

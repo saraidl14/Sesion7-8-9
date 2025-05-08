@@ -21,7 +21,7 @@ public partial class Animal4 : ContentPage
             BindingContext = new CambioVentanas
             {
                 Texto = "Los Dragones Rojos",
-                Image = "rojo.png",
+                Image = "rojo.jpg",
                 Description = "Los dragones rojos son los guerreros definitivos, con una fuerza imparable y una naturaleza feroz. " +
                                           "Son dominantes en combate y son temidos por su poder destructivo, " +
                                           "especialmente cuando se trata de misiones que requieren destruir al enemigo.\r\n\r\n" +

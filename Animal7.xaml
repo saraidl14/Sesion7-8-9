@@ -12,7 +12,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
             <!--Imagen representativa de los dragones dorados o cola plumas-->
-            <Image Source="dorado2.png" 
+            <Image Source="dorado2.jpg" 
             HeightRequest="400"/>
             <!--Boton que te lleva a los detalles-->
             <Button Text="Detalles"
