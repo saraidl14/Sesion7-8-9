@@ -12,8 +12,8 @@ public partial class Animal3 : ContentPage
     /// Método que se encarga de cambiar de ventana al hacer click en el botón.
     /// Es el que va a hacer que al clickar en detalles se nos muestren.
     /// </summary>
-    /// param name="sender">Objeto que activa el evento</param>
-    /// param name="e">Argumentos del evento que ayuda a la funcion</param>
+    /// param name="sender" Objeto que activa el evento
+    /// param name="e" Argumentos del evento que ayuda a la funcion
     {
         Navigation.PushAsync(new Detalles
         {
