@@ -2,7 +2,57 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sesion7_8_9.MainPage"
-             Title="Home">
+             Title="Home"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <ContentPage.Resources>
+        <Style x:Key="LargeLabelStyle"
+        TargetType="Label">
+            <Setter Property="TextColor"
+             Value="{DynamicResource SecondaryTextColor}" />
+            <Setter Property="FontSize"
+             Value="30" />
+        </Style>
+        <Style x:Key="MediumLabelStyle"
+            TargetType="Label">
+            <Setter Property="TextColor"
+                 Value="{DynamicResource PrimaryTextColor}" />
+            <Setter Property="FontSize"
+                 Value="25" />
+        </Style>
+
+        <Style x:Key="SmallLabelStyle"
+            TargetType="Label">
+            <Setter Property="TextColor"
+                 Value="{DynamicResource TertiaryTextColor}" />
+            <Setter Property="FontSize"
+                 Value="15" />
+        </Style>
+        <Style x:Key="EstiloEtiquetaGrande"
+        TargetType="Label">
+            <Setter Property="TextColor"
+             Value="{DynamicResource SecondaryTextColor}" />
+            <Setter Property="FontSize"
+             Value="30" />
+        </Style>
+
+        <Style x:Key="EstiloEtiquetaMediano"
+        TargetType="Label">
+            <Setter Property="TextColor"
+             Value="{DynamicResource PrimaryTextColor}" />
+            <Setter Property="FontSize"
+             Value="25" />
+        </Style>
+
+        <Style x:Key="EstiloEtiquetaPequeno"
+        TargetType="Label">
+            <Setter Property="TextColor"
+             Value="{DynamicResource TertiaryTextColor}" />
+            <Setter Property="FontSize"
+             Value="15" />
+
+        </Style>
+    </ContentPage.Resources>
 
     <ScrollView>
         <VerticalStackLayout Padding="10">
@@ -40,11 +90,11 @@
             <Label Text="• Dragones Verdes" FontAttributes="Bold" TextColor="Green"/>
             <Label Text="• Dragones Azules" FontAttributes="Bold" TextColor="Blue"/>
             <Label Text="• Dragones Marrones" FontAttributes="Bold" TextColor="SaddleBrown"/>
-            <Label Text="• Dragones Negros" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="• Dragones Negros" FontAttributes="Bold" TextColor="{DynamicResource PrimaryTextColor}"/>
             <Label Text="• Dragones Desconocidos" FontAttributes="Bold" TextColor="Grey"/>
 
             <!-- Mensaje adicional -->
-            <Label Text="Para saber más ve al menú desplegable"  TextColor="Black"/>
+            <Label Text="Para saber más ve al menú desplegable"  TextColor="{DynamicResource PrimaryTextColor}"/>
 
             <!-- Sección sobre las fases de vida de los dragones -->
             <Label Text="Fases de la vida de un dragón"
@@ -55,7 +105,7 @@
 
             <Label Text="Los dragones cuentan con unas cinco fases prioritarias en su vida, que van desde su crianza hasta su adultez. Cuando estos empiezan a crecer (al tener entre 3 o 4 años) se les conoce cómo ‘Colas de pluma’ y en esa época se les enseña que deben esperar a crecer de verdad para vincularse con un jinete."
                FontSize="Medium"
-               TextColor="Black"/>
+               TextColor="{DynamicResource PrimaryTextColor}"/>
 
             <!-- Información sobre el 'Sueño sin Sueño' -->
             <Label Text="Cuando llegan a la adolescencia, los dragones entran en un trance conocido cómo el ‘Sueño sin Sueño’, que les permite un rápido crecimiento de sus cuerpos para que estos sean capaces de llevar a un jinete con ellos. Solo se sabe cuatro cosas con certeza de este trance:" 
@@ -64,15 +114,15 @@
                TextColor="DarkRed"/>
 
             <!-- Características del trance -->
-            <Label Text="• La duración del mismo varía dependiendo de la raza del dragón." TextColor="Black"/>
-            <Label Text="• A pesar de estar ‘dormidos’, los dragones no tienen ningún tipo de sueño durante el proceso." TextColor="Black"/>
-            <Label Text="• Cada vez que un dragón sale del Sueño sin Sueños, este sale hambriento." TextColor="Black"/>
-            <Label Text="• Una vez salen del trance, desarrollan un nuevo color y una nueva cola perdiendo su cola de plumas y su color dorado." TextColor="Black"/>
+            <Label Text="• La duración del mismo varía dependiendo de la raza del dragón." TextColor="{DynamicResource PrimaryTextColor}"/>
+            <Label Text="• A pesar de estar ‘dormidos’, los dragones no tienen ningún tipo de sueño durante el proceso." TextColor="{DynamicResource PrimaryTextColor}"/>
+            <Label Text="• Cada vez que un dragón sale del Sueño sin Sueños, este sale hambriento." TextColor="{DynamicResource PrimaryTextColor}"/>
+            <Label Text="• Una vez salen del trance, desarrollan un nuevo color y una nueva cola perdiendo su cola de plumas y su color dorado." TextColor="{DynamicResource PrimaryTextColor}"/>
 
             <!-- Información sobre la adultez y el apareamiento -->
             <Label Text="Una vez ya son adultos, estos se pueden aparear. Se dice que no existe un vínculo más fuerte que el que existe entre dos dragones apareados, ya que va más allá del amor o la propia adoración humana. Cuando dos dragones se juntan, no pueden vivir sin el otro y ni siquiera pueden estar mucho tiempo separados físicamente, ya que su salud se disminuye." 
                FontSize="Medium" 
-               TextColor="Black"/>
+               TextColor="{DynamicResource PrimaryTextColor}"/>
 
         </VerticalStackLayout>
 
